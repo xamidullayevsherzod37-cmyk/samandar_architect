@@ -26,12 +26,12 @@ export default function Hero({ t }) {
         opacity: 0.06,
       }}>
         <svg width="600" height="700" viewBox="0 0 600 700" fill="none">
-          <rect x="100" y="200" width="120" height="500" fill="currentColor"/>
-          <rect x="240" y="100" width="100" height="600" fill="currentColor"/>
-          <rect x="360" y="300" width="90" height="400" fill="currentColor"/>
-          <rect x="470" y="150" width="80" height="550" fill="currentColor"/>
-          <rect x="0" y="400" width="80" height="300" fill="currentColor"/>
-          <rect x="550" y="250" width="50" height="450" fill="currentColor"/>
+          <rect x="100" y="200" width="120" height="500" fill="currentColor" />
+          <rect x="240" y="100" width="100" height="600" fill="currentColor" />
+          <rect x="360" y="300" width="90" height="400" fill="currentColor" />
+          <rect x="470" y="150" width="80" height="550" fill="currentColor" />
+          <rect x="0" y="400" width="80" height="300" fill="currentColor" />
+          <rect x="550" y="250" width="50" height="450" fill="currentColor" />
         </svg>
       </div>
 
@@ -105,16 +105,16 @@ export default function Hero({ t }) {
             transition: 'all 0.3s',
             border: '2px solid transparent',
           }}
-          onMouseOver={e => {
-            e.currentTarget.style.background = 'transparent'
-            e.currentTarget.style.color = 'var(--text-primary)'
-            e.currentTarget.style.borderColor = 'var(--text-primary)'
-          }}
-          onMouseOut={e => {
-            e.currentTarget.style.background = 'var(--btn-bg)'
-            e.currentTarget.style.color = 'var(--btn-text)'
-            e.currentTarget.style.borderColor = 'transparent'
-          }}>
+            onMouseOver={e => {
+              e.currentTarget.style.background = 'transparent'
+              e.currentTarget.style.color = 'var(--text-primary)'
+              e.currentTarget.style.borderColor = 'var(--text-primary)'
+            }}
+            onMouseOut={e => {
+              e.currentTarget.style.background = 'var(--btn-bg)'
+              e.currentTarget.style.color = 'var(--btn-text)'
+              e.currentTarget.style.borderColor = 'transparent'
+            }}>
             {t.hero.cta}
           </a>
 
@@ -132,12 +132,12 @@ export default function Hero({ t }) {
             border: '2px solid var(--card-border)',
             transition: 'all 0.3s',
           }}
-          onMouseOver={e => {
-            e.currentTarget.style.borderColor = 'var(--text-primary)'
-          }}
-          onMouseOut={e => {
-            e.currentTarget.style.borderColor = 'var(--card-border)'
-          }}>
+            onMouseOver={e => {
+              e.currentTarget.style.borderColor = 'var(--text-primary)'
+            }}
+            onMouseOut={e => {
+              e.currentTarget.style.borderColor = 'var(--card-border)'
+            }}>
             {t.hero.ctaContact}
           </a>
         </div>
